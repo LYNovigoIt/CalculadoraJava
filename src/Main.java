@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class Main {
 
+    //CONSTANTES
     static boolean sair = false;
     static double num1;
     static double num2;
     static Scanner scan = new Scanner(System.in);
 
-
+    //MÉTODO MAIN
     public static void main(String[] args) {
 
         while(!sair){
@@ -39,6 +40,7 @@ public class Main {
         }
     }
 
+    //MÉTODO DIVIDIR
     private static void dividirOp() {
         System.out.println("Qual o primeiro número?");
         num1 = scan.nextDouble();
@@ -59,6 +61,7 @@ public class Main {
         }
     }
 
+    //MÉTODO MULTIPLICAR
     private static void multiplicarOp() {
         System.out.println("Qual o primeiro número?");
         num1 = scan.nextDouble();
@@ -73,6 +76,7 @@ public class Main {
         System.out.println("O resultado da multiplicação é " + result);
     }
 
+    //MÉTODO SUBTRAIR
     private static void subtrairOp() {
         System.out.println("Qual o primeiro número?");
         num1 = scan.nextDouble();
@@ -87,6 +91,7 @@ public class Main {
         System.out.println("O resultado da subtração é " + result);
     }
 
+    //MÉTODO SOMAR
     private static void somarOp() {
         System.out.println("Qual o primeiro número?");
         num1 = scan.nextDouble();
@@ -101,14 +106,18 @@ public class Main {
         System.out.println("O resultado da soma é " + result);
     }
 
+    //MÉTODO DE ERRO
     private static void errMsg() {
         System.out.println("Escolha uma operação válida");
     }
 
+    //MÉTODO SAIR
     private static void sairOp() {
         System.out.println("Saindo...");
     }
 
+
+    //MÉTODO DO MENU
     private static void imprimirMenu() {
         System.out.println("1-Somar");
         System.out.println("2-Subtrair");
