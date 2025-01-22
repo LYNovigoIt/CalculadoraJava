@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Main {
 
+    //PROJETO CALCULADORA - PROJETO 1
+
     //CONSTANTES
     static boolean sair = false;
     static double num1;
